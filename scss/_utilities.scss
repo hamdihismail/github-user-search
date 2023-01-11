@@ -147,16 +147,16 @@ input:focus{
 
 @mixin light-mode {
     .nav-header,.num{
-      color: $color-dark-lightmode;
+      color: $color-dark-lightmode !important;
     }
     .search-form,.results-container{
-      background: $color-white-lightmode;
+      background: $color-white-lightmode !important;
     }
     .profile-info-container{
-      background: $color-shadowWhite-lightmode;
+      background: $color-shadowWhite-lightmode !important;
     }
     .txt,.location-text,.twitter-text,.github-text,.link-text{
-      color: $color-greyishBlue-lightmode;
+      color: $color-greyishBlue-lightmode !important;
     }
    
     .toggle-dark,.icon-sun{

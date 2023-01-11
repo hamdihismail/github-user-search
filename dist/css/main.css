@@ -89,13 +89,15 @@ input:focus {
       color: #F74646 !important; } }
 
 @media (prefers-color-scheme: light) {
-  body .nav-header, body .num {
+  body .nav-header, body .num, body .profile-name {
     color: #2a3341 !important; }
-  body .search-form, body .results-container {
+  body .profile-date {
+    color: #697c9b !important; }
+  body .search-form, body .results-container, body .search-input {
     background: white !important; }
   body .profile-info-container {
     background: #f5f7ff !important; }
-  body .txt, body .location-text, body .twitter-text, body .github-text, body .link-text {
+  body .txt, body .location-text, body .twitter-text, body .github-text, body .link-text, body .bio-text {
     color: #4b699b !important; }
   body .toggle-dark, body .icon-sun {
     display: none !important; }
@@ -119,16 +121,19 @@ input:focus {
   .dark-mode .error {
     color: #F74646 !important; }
 
-.light-mode .nav-header, .light-mode .num {
+.light-mode .nav-header, .light-mode .num, .light-mode .profile-name {
   color: #2a3341 !important; }
 
-.light-mode .search-form, .light-mode .results-container {
+.light-mode .profile-date {
+  color: #697c9b !important; }
+
+.light-mode .search-form, .light-mode .results-container, .light-mode .search-input {
   background: white !important; }
 
 .light-mode .profile-info-container {
   background: #f5f7ff !important; }
 
-.light-mode .txt, .light-mode .location-text, .light-mode .twitter-text, .light-mode .github-text, .light-mode .link-text {
+.light-mode .txt, .light-mode .location-text, .light-mode .twitter-text, .light-mode .github-text, .light-mode .link-text, .light-mode .bio-text {
   color: #4b699b !important; }
 
 .light-mode .toggle-dark, .light-mode .icon-sun {

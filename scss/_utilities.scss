@@ -146,16 +146,19 @@ input:focus{
 }
 
 @mixin light-mode {
-    .nav-header,.num{
+    .nav-header,.num,.profile-name{
       color: $color-dark-lightmode !important;
     }
-    .search-form,.results-container{
+    .profile-date{
+      color: $color-grey-lightmode !important;
+    }
+    .search-form,.results-container,.search-input{
       background: $color-white-lightmode !important;
     }
     .profile-info-container{
       background: $color-shadowWhite-lightmode !important;
     }
-    .txt,.location-text,.twitter-text,.github-text,.link-text{
+    .txt,.location-text,.twitter-text,.github-text,.link-text,.bio-text{
       color: $color-greyishBlue-lightmode !important;
     }
    

@@ -89,7 +89,7 @@ input:focus {
       color: #F74646 !important; } }
 
 @media (prefers-color-scheme: light) {
-  body .nav-header, body .num, body .profile-name {
+  body .nav-header, body .num, body .profile-name, body .search-input {
     color: #2a3341 !important; }
   body .profile-date {
     color: #697c9b !important; }
@@ -121,7 +121,7 @@ input:focus {
   .dark-mode .error {
     color: #F74646 !important; }
 
-.light-mode .nav-header, .light-mode .num, .light-mode .profile-name {
+.light-mode .nav-header, .light-mode .num, .light-mode .profile-name, .light-mode .search-input {
   color: #2a3341 !important; }
 
 .light-mode .profile-date {

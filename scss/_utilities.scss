@@ -146,7 +146,7 @@ input:focus{
 }
 
 @mixin light-mode {
-    .nav-header,.num,.profile-name{
+    .nav-header,.num,.profile-name,.search-input{
       color: $color-dark-lightmode !important;
     }
     .profile-date{

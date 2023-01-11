@@ -5,7 +5,8 @@ const url = ' https://api.github.com/search/users?q=';
 
 
 export const fetchUsers = async (searchValue)=>{
-    const newUrl = `${url}${searchValue.toLowerCase().trim()}`
+    searchValue = searchValue.toLowerCase().trim()
+    const newUrl = `${url}${searchValue}`
     const resp = await fetch(newUrl);
     const data = await resp.json();
     const users = data.items;

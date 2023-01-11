@@ -146,6 +146,19 @@ input:focus{
 }
 
 @mixin light-mode {
+    .nav-header,.num{
+      color: $color-dark-lightmode;
+    }
+    .search-form,.results-container{
+      background: $color-white-lightmode;
+    }
+    .profile-info-container{
+      background: $color-shadowWhite-lightmode;
+    }
+    .txt,.location-text,.twitter-text,.github-text,.link-text{
+      color: $color-greyishBlue-lightmode;
+    }
+   
     .toggle-dark,.icon-sun{
         display: none !important;
        }

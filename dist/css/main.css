@@ -89,6 +89,14 @@ input:focus {
       color: #F74646 !important; } }
 
 @media (prefers-color-scheme: light) {
+  body .nav-header, body .num {
+    color: #2a3341; }
+  body .search-form, body .results-container {
+    background: white; }
+  body .profile-info-container {
+    background: #f5f7ff; }
+  body .txt, body .location-text, body .twitter-text, body .github-text, body .link-text {
+    color: #4b699b; }
   body .toggle-dark, body .icon-sun {
     display: none !important; }
   body .toggle-light, body .icon-moon {
@@ -110,6 +118,18 @@ input:focus {
     display: none !important; }
   .dark-mode .error {
     color: #F74646 !important; }
+
+.light-mode .nav-header, .light-mode .num {
+  color: #2a3341; }
+
+.light-mode .search-form, .light-mode .results-container {
+  background: white; }
+
+.light-mode .profile-info-container {
+  background: #f5f7ff; }
+
+.light-mode .txt, .light-mode .location-text, .light-mode .twitter-text, .light-mode .github-text, .light-mode .link-text {
+  color: #4b699b; }
 
 .light-mode .toggle-dark, .light-mode .icon-sun {
   display: none !important; }

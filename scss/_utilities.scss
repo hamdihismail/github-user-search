@@ -163,40 +163,40 @@ input:focus {
 }
 
 @mixin light-mode {
-  .nav-header,
-  .num,
-  .profile-name,
-  .search-input {
-    color: $color-dark-lightmode !important;
-  }
-  .profile-date {
-    color: $color-grey-lightmode !important;
-  }
-  .search-form,
-  .results-container,
-  .search-input {
-    background: $color-white-lightmode;
-  }
-  .profile-info-container {
-    background: $color-shadowWhite-lightmode !important;
-  }
-  .txt,
-  .location-text,
-  .twitter-text,
-  .github-text,
-  .link-text,
-  .bio-text {
-    color: $color-greyishBlue-lightmode !important;
-  }
+  // .nav-header,
+  // .num,
+  // .profile-name,
+  // .search-input {
+  //   color: $color-dark-lightmode !important;
+  // }
+  // .profile-date {
+  //   color: $color-grey-lightmode !important;
+  // }
+  // .search-form,
+  // .results-container,
+  // .search-input {
+  //   background: $color-white-lightmode;
+  // }
+  // .profile-info-container {
+  //   background: $color-shadowWhite-lightmode !important;
+  // }
+  // .txt,
+  // .location-text,
+  // .twitter-text,
+  // .github-text,
+  // .link-text,
+  // .bio-text {
+  //   color: $color-greyishBlue-lightmode !important;
+  // }
 
-  .toggle-dark,
-  .icon-sun {
-    display: none !important;
-  }
-  .toggle-light,
-  .icon-moon {
-    display: block !important;
-  }
+  // .toggle-dark,
+  // .icon-sun {
+  //   display: none !important;
+  // }
+  // .toggle-light,
+  // .icon-moon {
+  //   display: block !important;
+  // }
 }
 
 @media (prefers-color-scheme: dark) {

@@ -4,170 +4,199 @@
 /*
   1. Use a more-intuitive box-sizing model.
 */
-*, *::before, *::after {
-    box-sizing: border-box;
-  }
-  /*
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/*
     2. Remove default margin
   */
-  * {
-    margin: 0;
-  }
-  /*
+* {
+  margin: 0;
+}
+/*
     3. Allow percentage-based heights in the application
   */
-  html, body {
-    height: 100%;
-  }
-  /*
+html,
+body {
+  height: 100%;
+}
+/*
     Typographic tweaks!
     4. Add accessible line-height
     5. Improve text rendering
   */
-  body {
-    line-height: 1.5;
-    -webkit-font-smoothing: antialiased;
-    font-family: 'Space Mono', monospace;
-  }
-  /*
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  font-family: 'Space Mono', monospace;
+}
+/*
     6. Improve media defaults
   */
-  img, picture, video, canvas, svg {
-    display: block;
-    max-width: 100%;
-  }
-  /*
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+/*
     7. Remove built-in form typography styles
   */
-  input, button, textarea, select {
-    font: inherit;
-  }
-  /*
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+/*
     8. Avoid text overflows
   */
-  p, h1, h2, h3, h4, h5, h6 {
-    overflow-wrap: break-word;
-  }
-  /*
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+/*
     9. Create a root stacking context
   */
-  #root, #__next {
-    isolation: isolate;
-  }
-
+#root,
+#__next {
+  isolation: isolate;
+}
 
 //  Styleguides
 
-    // Colors light mode
-    $color-blue-lightmode: hsla(212, 100%, 50%, 1);
-    $color-grey-lightmode: hsla(217, 20%, 51%, 1);
-    $color-greyishBlue-lightmode: hsla(217, 35%, 45%, 1);
-    $color-dark-lightmode: hsla(217, 21%, 21%, 1);
-    $color-shadowWhite-lightmode: hsla(227, 100%, 98%, 1);
-    $color-white-lightmode: hsla(0, 0%, 100%, 1);
-    // Colors dark mode
-    $color-blue-darkmode: hsla(212, 100%, 50%, 1);
-    $color-white-darkmode: hsla(0, 0%, 100%, 1);
-    $color-dark-darkmode: hsla(220, 40%, 13%, 1);
-    $color-darkBlue-darkmode: hsla(222, 41%, 20%, 1);
+// Colors light mode
+$color-blue-lightmode: hsla(212, 100%, 50%, 1);
+$color-grey-lightmode: hsla(217, 20%, 51%, 1);
+$color-greyishBlue-lightmode: hsla(217, 35%, 45%, 1);
+$color-dark-lightmode: hsla(217, 21%, 21%, 1);
+$color-shadowWhite-lightmode: hsla(227, 100%, 98%, 1);
+$color-white-lightmode: hsla(0, 0%, 100%, 1);
+// Colors dark mode
+$color-blue-darkmode: hsla(212, 100%, 50%, 1);
+$color-white-darkmode: hsla(0, 0%, 100%, 1);
+$color-dark-darkmode: hsla(220, 40%, 13%, 1);
+$color-darkBlue-darkmode: hsla(222, 41%, 20%, 1);
 
-    // Font styles
-    $font-size-XL: 26px;
-    $font-size-L: 22px;
-    $font-size-M: 16px;
-    $font-size-S: 13px;
+// Font styles
+$font-size-XL: 26px;
+$font-size-L: 22px;
+$font-size-M: 16px;
+$font-size-S: 13px;
 
 // BreakPoints
 $tabletBp: 980px;
 $mobileBp: 675px;
 
-
-
-
 // toggle icons
-.icon-moon{
-    width: 20px;
-    height: 20px;
-    svg{
-        fill: $color-grey-lightmode;
-    }
+.icon-moon {
+  width: 20px;
+  height: 20px;
+  svg {
+    fill: $color-grey-lightmode;
+  }
 }
-.icon-sun{
-    // background: url(/starter-code/assets/icon-sun.svg) no-repeat center center/cover;
-    width: 20px;
-    height: 20px;
-    svg{
-        fill: $color-white-darkmode;
-        
-    }
-   
+.icon-sun {
+  // background: url(/starter-code/assets/icon-sun.svg) no-repeat center center/cover;
+  width: 20px;
+  height: 20px;
+  svg {
+    fill: $color-white-darkmode;
+  }
 }
 
 // hover states
-a:hover{
-    text-decoration: underline !important;
+a:hover {
+  text-decoration: underline !important;
 }
 // input styles
-input:focus{
-    outline: none;
+input:focus {
+  outline: none;
 }
 
 // mixins dark/light
 
 @mixin dark-mode {
-    
-       background: $color-dark-darkmode;
+  background: $color-dark-darkmode;
 
-       .twitter-text,.link-text,.github-text,div,h1,p,button,input{
-        color: $color-white-darkmode !important;
-       }
-       .search-input{
-        background: $color-darkBlue-darkmode;
-       }
+  .twitter-text,
+  .link-text,
+  .github-text,
+  div,
+  h1,
+  p,
+  button,
+  input {
+    color: $color-white-darkmode !important;
+  }
+  .search-input {
+    background: $color-darkBlue-darkmode !important;
+  }
 
-       .search-form,.results-container{
-        background: $color-darkBlue-darkmode;
-       }
-       .profile-info-container{
-        background: $color-dark-darkmode !important;
-       }
-       .toggle-dark,.icon-sun{
-        display: block !important;
-       }
-       .toggle-light,.icon-moon{
-        display: none !important;
-       }
-       .error{
-        color: #F74646 !important;
-       }
-    
-  
-  
+  .search-form,
+  .results-container {
+    background: $color-darkBlue-darkmode !important;
+  }
+  .profile-info-container {
+    background: $color-dark-darkmode !important;
+  }
+  .toggle-dark,
+  .icon-sun {
+    display: block !important;
+  }
+  .toggle-light,
+  .icon-moon {
+    display: none !important;
+  }
+  .error {
+    color: #f74646 !important;
+  }
 }
 
 @mixin light-mode {
-    .nav-header,.num,.profile-name,.search-input{
-      color: $color-dark-lightmode !important;
-    }
-    .profile-date{
-      color: $color-grey-lightmode !important;
-    }
-    .search-form,.results-container,.search-input{
-      background: $color-white-lightmode !important;
-    }
-    .profile-info-container{
-      background: $color-shadowWhite-lightmode !important;
-    }
-    .txt,.location-text,.twitter-text,.github-text,.link-text,.bio-text{
-      color: $color-greyishBlue-lightmode !important;
-    }
-   
-    .toggle-dark,.icon-sun{
-        display: none !important;
-       }
-       .toggle-light,.icon-moon{
-        display: block !important;
-       }
+  .nav-header,
+  .num,
+  .profile-name,
+  .search-input {
+    color: $color-dark-lightmode !important;
+  }
+  .profile-date {
+    color: $color-grey-lightmode !important;
+  }
+  .search-form,
+  .results-container,
+  .search-input {
+    background: $color-white-lightmode !important;
+  }
+  .profile-info-container {
+    background: $color-shadowWhite-lightmode !important;
+  }
+  .txt,
+  .location-text,
+  .twitter-text,
+  .github-text,
+  .link-text,
+  .bio-text {
+    color: $color-greyishBlue-lightmode !important;
+  }
+
+  .toggle-dark,
+  .icon-sun {
+    display: none !important;
+  }
+  .toggle-light,
+  .icon-moon {
+    display: block !important;
+  }
 }
 
 @media (prefers-color-scheme: dark) {
@@ -183,23 +212,21 @@ input:focus{
 }
 
 .dark-mode {
-    @include dark-mode();
+  @include dark-mode();
 }
 .light-mode {
-    @include light-mode();
+  @include light-mode();
 }
 
-
 // Not available grey out
-.na{
-    opacity: 50%;
+.na {
+  opacity: 50%;
 }
 
 // hide/show
-.hide{
-    display: none !important;
+.hide {
+  display: none !important;
 }
-.show{
-    display: block !important;
+.show {
+  display: block !important;
 }
-
